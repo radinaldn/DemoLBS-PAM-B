@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DemoLBS</string>
+    <string name="msg">Mohon terima semua permission</string>
+</resources>

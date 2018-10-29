@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.topapp.radinaldn.demolbs.activity.MainActivity"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Makanan"
+        android:textSize="15pt"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etmakanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Makanan. eg : Nasi goreng"
+                android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etporsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Porsi. eg : 5 piring"
+                android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Keterangan. eg : Gak pake sambel"
+                android:inputType="textMultiLine"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/etlat"
+                android:hint="latitude"
+                android:singleLine="true"
+                android:layout_weight="0.39"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/etlng"
+                android:hint="longitude"
+                android:layout_weight="0.39"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btkirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kirim"
+                android:layout_weight="0.39"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"/>
+
+            <Button
+                android:id="@+id/btbatal"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batal"
+                android:layout_weight="0.39"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
